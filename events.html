@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(109, 84, 250);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .button {
+            background-color: rgb(250, 8, 8);
+            text-decoration: none;
+            margin: 24px;
+        }
+        .button-text{
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="#" class="button" onclick="alert('Ia m awesome , But no one use me')">
+        <span class="button-text">simple Inline alert()</span>
+    </a>
+
+
+
+    <a href="#" class="button" onclick="callingFunction()">
+        <span class="button-text">callingFunction</span>
+    </a>
+
+
+
+    <a href="#" class="button">
+        <span class="button-text" id="thirdWay">simple Inline alert()</span>
+    </a>
+
+
+
+    <a href="#" class="button">
+        <span class="button-text" id="fourthWay">simple Inline alert()</span>
+    </a>
+</body>
+<script>
+    // const callingFunction = () => {
+    //     alert("by calling a function");
+    // }
+
+    // const thirdWay = document.getElementById("thirdWay")
+
+    // thirdWay.onclick = function() {
+    //     alert("hello");
+    // }
+
+
+    fourthWay = document.querySelector(#fourthWay);
+    fourthWay.addEventListener('click', () => {
+        alert("I love you");
+    })
+
+</script>
+</html>

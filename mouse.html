@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        #box {
+            margin-top: 105px;
+            padding-top: 74px;
+            text-align: center;
+            height: 100px;
+            width: 150px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">hello</div>
+</body>
+<script>
+    const mouseEvent = document.getElementById("box");
+
+    mouseEvent.addEventListener('mouseenter', ()=>{
+        mouseEvent.style.backgroundColor = 'red';
+        console.log("Mouse enter Bro");
+
+    })
+
+    mouseEvent.addEventListener('mouseleave', ()=>{
+        console.log("Mouse leave bro");
+        mouseEvent.style.backgroundColor = 'green';
+    })
+
+</script>
+</html>
